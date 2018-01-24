@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliPush.Binding.Droid", "AliPush.Binding.Droid\AliPush.Binding.Droid.csproj", "{986C5747-A30D-4A70-8E3B-8B2327B6E347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliPush.Binding.iOS", "AliPush.Binding.iOS\AliPush.Binding.iOS.csproj", "{7E950621-C256-4E93-A978-D3D84340336B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{986C5747-A30D-4A70-8E3B-8B2327B6E347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986C5747-A30D-4A70-8E3B-8B2327B6E347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986C5747-A30D-4A70-8E3B-8B2327B6E347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986C5747-A30D-4A70-8E3B-8B2327B6E347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E950621-C256-4E93-A978-D3D84340336B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E950621-C256-4E93-A978-D3D84340336B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E950621-C256-4E93-A978-D3D84340336B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E950621-C256-4E93-A978-D3D84340336B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88B2A2C3-9321-4BE4-BECD-8EFF7E5110BA}
+	EndGlobalSection
+EndGlobal
