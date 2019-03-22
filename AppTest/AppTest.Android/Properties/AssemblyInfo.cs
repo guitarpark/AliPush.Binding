@@ -37,6 +37,7 @@ using Android.Runtime;
 
 
 #region 阿里推送相关权限
+#region 阿里推送相关权限
 [assembly: UsesPermission(Android.Manifest.Permission.WriteSettings)]//Android 6.0版本可去除，用于选举信息（通道复用）的同步
 [assembly: UsesPermission(Android.Manifest.Permission.AccessNetworkState)]//进行网络访问和网络状态监控相关的权限声明-
 [assembly: UsesPermission(Android.Manifest.Permission.AccessWifiState)]//进行网络访问和网络状态监控相关的权限声明-
@@ -53,15 +54,16 @@ using Android.Runtime;
 [assembly: UsesPermission(Android.Manifest.Permission.ReorderTasks)]//允许task重排序
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]//网络
 [assembly: UsesPermission(Android.Manifest.Permission.ModifyAudioSettings)]//声音设置
+#endregion
 
 #region 小米相关
 #endregion
-[assembly: Permission(Name = AliPush.Binding.Droid.AliPushConfig.PackageName + ".permission.MIPUSH_RECEIVE", ProtectionLevel = Android.Content.PM.Protection.Signature)]
+[assembly: Permission(Name = AliPushConfig.PackageName + ".permission.MIPUSH_RECEIVE", ProtectionLevel = Android.Content.PM.Protection.Signature)]
 [assembly: UsesPermission(AliPushConfig.PackageName + ".permission.MIPUSH_RECEIVE")]
 #endregion
 
-[assembly: MetaData(name: "com.alibaba.app.appkey", Value = "--------需要填写--------")]
-[assembly: MetaData(name: "com.alibaba.app.appsecret", Value = "--------需要填写--------")]
+[assembly: MetaData(name: "com.alibaba.app.appkey", Value = "----------------")]
+[assembly: MetaData(name: "com.alibaba.app.appsecret", Value = "------------------")]
 
 public static class AliPushConfig
 {
@@ -81,9 +83,11 @@ namespace com.guitarpark.app//写一个类，继承就好了
     {
         public override void OnReceive(Context context, Intent intent)
         {
+            var fff = context;
+            var ggg = intent;
         }
     }
-    [Activity(Exported = true, Name = "com.guitarpark.app.Activitys.PopupPushActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
+    [Activity(Exported = true, Name = AliPushConfig.PackageName + ".PopupPushActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class PushExtActivity : Activity
     {
 
